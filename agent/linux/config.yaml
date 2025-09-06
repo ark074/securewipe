@@ -1,0 +1,12 @@
+# SecureWipe agent config (example)
+verifier_url: "https://verifier.example.com/api/submit"
+mtls_client_cert: "/etc/securewipe/client.crt"
+mtls_client_key: "/etc/securewipe/client.key"
+trust_bundle: "/etc/securewipe/ca.crt"
+key_backend: "file" # or 'vault' or 'tpm'
+signing_key_path: "/etc/securewipe/keys/ed25519_sk.hex"
+smtp:
+  host: "smtp.gmail.com"
+  port: 587
+  user: ""
+  pass: ""

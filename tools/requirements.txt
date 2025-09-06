@@ -1,0 +1,5 @@
+pynacl
+reportlab
+cryptography
+pyhanko
+requests

@@ -1,0 +1,13 @@
+[Unit]
+Description=SecureWipe Agent
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/securewipe_agent --config /etc/securewipe/config.yaml
+Restart=on-failure
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

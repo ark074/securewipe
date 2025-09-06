@@ -1,0 +1,1 @@
+Windows agent: provide an executable that uses Windows DeviceIoControl to perform ATA/NVMe passthrough. Ship signed binaries for production.
