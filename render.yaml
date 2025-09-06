@@ -1,10 +1,17 @@
 services:
   - type: web
+    name: securewipe
+    env: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    envVars:
+      - key: PRIVATE_KEY_CONTENT
+        sync: false
+
+  - type: web
     name: securewipe-verifier
     env: docker
     plan: free
-    autoDeploy: true
-    rootDir: verifier
     dockerfilePath: ./verifier/Dockerfile
     envVars:
       - key: PUBKEY_CONTENT
